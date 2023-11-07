@@ -1,8 +1,8 @@
-pub fn adder(a: u32, b: u32) -> u32 {
-    let sum: u32 = a ^ b;
+pub fn multiplier(a: u32, b: u32) -> u32 {
+    let result: u32 = a ^ b;
     match (a & b) << 1 {
-        0 => sum,
-        carry => adder(sum, carry),
+        0 => result,
+        carry => adder(result, carry),
     }
 }
 
