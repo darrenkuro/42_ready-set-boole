@@ -1,5 +1,5 @@
 pub fn eval_formula(formula: &str) -> bool {
-    const ERROR_MSG: &str = "Syntax error encountered!";
+    const ERROR_MSG: &str = "Syntax error!";
 
     let mut stack: Vec<bool> = Vec::new();
 
@@ -72,6 +72,12 @@ mod eval_formula_test {
     #[should_panic]
     fn non_empty_stack_2() {
         eval_formula("10&1");
+    }
+
+    #[test]
+    #[should_panic]
+    fn empty_input() {
+        eval_formula("");
     }
 
     #[test]
