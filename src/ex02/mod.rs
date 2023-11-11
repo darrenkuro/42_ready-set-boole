@@ -14,5 +14,8 @@ mod tests {
 		assert_eq!(gray_code(18), 0b11011);
 		assert_eq!(gray_code(19), 0b11010);
 		assert_eq!(gray_code(20), 0b11110);
+		assert_eq!(gray_code(21), 0b11111);
+		assert_eq!(gray_code(22), 0b11101);
+		assert_eq!(gray_code(23), 0b11100);
     }
 }
