@@ -1,5 +1,7 @@
 use crate::ex03::eval_formula;
 
+// Don't print it until the end to ensure it doesn't print something then panic or exit
+
 fn print_header(vars: &Vec<char>) {
     for c in vars.iter() {
         print!("| {c} ");
